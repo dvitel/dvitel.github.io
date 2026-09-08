@@ -36,3 +36,4 @@ three most recent publications, education, links (Scholar, ORCID, GitHub, Linked
 ## To update
 
 Edit `index.html` directly, bump the "Last updated" footer, replace `assets/Dmytro_Vitel_CV.pdf`.
+- LinkedIn is `https://www.linkedin.com/in/dmytro-vitel-b99a4087/` (fixed 2026-09-07). The CV links `linkedin.com/in/dmytro-vitel`, which is a different person; fix it in the CV source too.
