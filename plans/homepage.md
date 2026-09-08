@@ -22,6 +22,13 @@ three most recent publications, education, links (Scholar, ORCID, GitHub, Linked
   Article links (added 2026-09-07, resolved via Crossref / OpenReview API): ICLR → OpenReview `Dkgw08Z4sj`
   (ICLR 2026 poster) + arXiv 2511.04715; GECCO → doi:10.1145/3712256.3726464; EvoStar →
   doi:10.1007/978-3-031-90065-5_33 (LNCS, EvoApplications 2025 Part II, pp. 541-556).
+- Affiliation line (2026-09-07, owner's request): Postdoctoral Researcher, PALM Lab (Pioneering Advancements in
+  Learning Methods, PI Anshuman Chhabra, https://www.palmlab.org/), Bellini College of Artificial Intelligence,
+  Cybersecurity and Computing, USF. The lab's team page did not list Dmytro yet as of 2026-09-07.
+- Degrees carry no links. The CV's "dissertation" link (`viewcontent.cgi?article=9284`) actually resolves to the
+  2019 master's thesis, which is USF Digital Commons ETD 8087. The 2026 dissertation is not in Digital Commons
+  yet: 6-month embargo, expected public in October 2026 (newest ETD ids 11083-11107 scanned 2026-09-07, none by
+  Vitel). TODO October 2026: find the Digital Commons record and link the dissertation title.
 - Contact email is `dvitel@usf.edu` (replaced Gmail 2026-09-07). It is stored as `data-u`/`data-d` attributes
   and assembled into the `mailto:` by a few lines of JS, with `dvitel [at] usf [dot] edu` as the no-JS text,
   so the address never appears as a plain `mailto:` in the HTML source. Gmail remains only inside the CV PDF.
