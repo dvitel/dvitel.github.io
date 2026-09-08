@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dmytro Vitel</title>
+<meta name="description" content="Dmytro Vitel — postdoctoral researcher at the University of South Florida. Language modeling, interpretability and data influence, agentic systems, symbolic search and evolutionary computation.">
+<meta name="author" content="Dmytro Vitel">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --line: #d8dee4;
+    --accent: #0b5fa5;
+    --accent-bg: #eef5fc;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116;
+      --fg: #e6edf3;
+      --muted: #9aa4af;
+      --line: #2b323b;
+      --accent: #6cb4ee;
+      --accent-bg: #16202c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  main { max-width: 780px; margin: 0 auto; padding: 48px 24px 64px; }
+
+  header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  header img {
+    width: 168px; height: 168px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+  }
+  header h1 { margin: 0 0 4px; font-size: 2rem; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; }
+  header .role { margin: 0 0 12px; color: var(--muted); }
+  nav.links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.95rem; }
+  nav.links a { white-space: nowrap; }
+
+  section { margin-top: 36px; }
+  h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 14px; }
+  ul.interests { margin: 0; padding-left: 1.2em; }
+  ul.interests li { margin-bottom: 4px; }
+
+  ol.pubs { list-style: none; margin: 0; padding: 0; }
+  ol.pubs li { margin-bottom: 18px; padding-left: 0; }
+  .pubs .title { font-weight: 600; }
+  .pubs .authors, .pubs .venue { display: block; color: var(--muted); font-size: 0.95rem; }
+  .pubs .me { color: var(--fg); }
+  .pubs .tags { margin-top: 4px; font-size: 0.9rem; }
+  .pubs .tags a {
+    display: inline-block;
+    padding: 1px 8px;
+    margin-right: 6px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--accent-bg);
+  }
+  .more { color: var(--muted); font-size: 0.95rem; }
+
+  dl.edu { margin: 0; }
+  dl.edu dt { font-weight: 600; }
+  dl.edu dd { margin: 0 0 10px; color: var(--muted); font-size: 0.95rem; }
+
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); padding-top: 14px; }
+
+  @media (max-width: 560px) {
+    main { padding: 32px 18px 48px; }
+    header { flex-direction: column; align-items: flex-start; gap: 20px; }
+    header img { width: 140px; height: 140px; }
+    header h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/photo.jpg" alt="Portrait of Dmytro Vitel" width="168" height="168">
+    <div>
+      <h1>Dmytro Vitel</h1>
+      <p class="role">Postdoctoral Researcher · Computer Science, University of South Florida</p>
+      <nav class="links" aria-label="Profiles">
+        <a href="mailto:viteldmitry@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=RME1wRwAAAAJ">Google Scholar</a>
+        <a href="https://orcid.org/0000-0003-4151-6858">ORCID</a>
+        <a href="https://github.com/dvitel">GitHub</a>
+        <a href="https://www.linkedin.com/in/dmytro-vitel">LinkedIn</a>
+        <a href="assets/Dmytro_Vitel_CV.pdf">CV (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a postdoctoral researcher in computer science at the University of South Florida in Tampa,
+      working with Dr. Anshuman Chhabra
+      on language model behaviour and interpretability. I completed my Ph.D. at USF in 2026 under
+      Dr. Alessio Gaspar in the <a href="https://cereal-lab.github.io/">CEREAL Lab</a>, where my dissertation
+      studied how latent structure in semantic spaces can be extracted and exploited for efficient symbolic
+      search and black-box optimization.
+    </p>
+    <p>
+      My work sits between two questions: how learning systems search structured spaces without converging
+      prematurely, and how we can attribute what a large language model does back to its data and its internals.
+      On the first, I study symbolic search, semantic genetic programming and interaction-aware optimization,
+      where modeling the latent interaction structure of a high-dimensional search space improves convergence.
+      On the second, I work on training-data influence estimation and on the failure modes of language models
+      as agents. I see these as one problem: symbolic search over reasoning chains and decision trees is what an
+      agent does, and reliable decision-making in sequential, interactive environments is where I want to take it.
+    </p>
+  </section>
+
+  <section id="interests">
+    <h2>Research interests</h2>
+    <ul class="interests">
+      <li>Language modeling, model interpretability and training-data influence</li>
+      <li>Agentic systems and world modeling</li>
+      <li>Symbolic search, semantic genetic programming and evolutionary computation</li>
+      <li>Coevolution and latent-structure extraction from sparse interactions</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Selected publications</h2>
+    <ol class="pubs">
+      <li>
+        <span class="title">First is Not Really Better Than Last: Evaluating Layer Choice and Aggregation Strategies in Language Model Data Influence Estimation</span>
+        <span class="authors"><span class="me">Dmytro Vitel</span>, Anshuman Chhabra</span>
+        <span class="venue">International Conference on Learning Representations (ICLR), 2026</span>
+        <span class="tags"><a href="https://github.com/dvitel/nn-infl">code</a><a href="https://github.com/dvitel/nn-infl-data">data</a></span>
+      </li>
+      <li>
+        <span class="title">Coordinate System Extraction as the Search Driver in Test-Based Genetic Programming</span>
+        <span class="authors"><span class="me">Dmytro Vitel</span>, Kok Cheng Tan, Alessio Gaspar, Paul Wiegand</span>
+        <span class="venue">Genetic and Evolutionary Computation Conference (GECCO), ACM, 2025</span>
+        <span class="tags"><a href="https://github.com/cereal-lab/cde-search">code</a></span>
+      </li>
+      <li>
+        <span class="title">Robust Search for the Underlying Objectives in Black-Box Games with Binary Outcomes</span>
+        <span class="authors"><span class="me">Dmytro Vitel</span>, Alessio Gaspar, Paul Wiegand</span>
+        <span class="venue">Applications of Evolutionary Computation (EvoApplications, EvoStar), 2025</span>
+        <span class="tags"><a href="https://github.com/cereal-lab/cde-search">code</a></span>
+      </li>
+    </ol>
+    <p class="more">Full list on <a href="https://scholar.google.com/citations?user=RME1wRwAAAAJ">Google Scholar</a> and in the <a href="assets/Dmytro_Vitel_CV.pdf">CV</a>.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <dl class="edu">
+      <dt>Ph.D. in Computer Science, University of South Florida, 2026</dt>
+      <dd>Dissertation: <a href="https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=9284&amp;context=etd">Extracting and Exploiting Latent Structures in Semantic Spaces for Efficient Symbolic Search and Black-Box Optimization</a>. Advisor: Alessio Gaspar.</dd>
+      <dt>M.S. in Computer Science, University of South Florida, 2019</dt>
+      <dd>Thesis: On Automation of Code Transformations for Concept Inventory Misconceptions. Advisor: Alessio Gaspar.</dd>
+      <dt>M.S. in Applied Physics, Taras Shevchenko National University of Kyiv, 2015</dt>
+      <dd>Thesis: Parallel Routing Algorithms on Graphs for Heterogeneous Architectures. Advisor: S. D. Pogorilyy.</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:viteldmitry@gmail.com">viteldmitry@gmail.com</a> · Tampa, FL, USA
+    </p>
+  </section>
+
+  <footer>
+    Last updated September 2026.
+  </footer>
+</main>
+</body>
+</html>
