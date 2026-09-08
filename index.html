@@ -109,7 +109,7 @@
       <h1>Dmytro Vitel</h1>
       <p class="role">Postdoctoral Researcher · Computer Science, University of South Florida</p>
       <nav class="links" aria-label="Profiles">
-        <a href="mailto:viteldmitry@gmail.com">Email</a>
+        <a class="email" data-u="dvitel" data-d="usf.edu" href="#contact">Email</a>
         <a href="https://scholar.google.com/citations?user=RME1wRwAAAAJ">Google Scholar</a>
         <a href="https://orcid.org/0000-0003-4151-6858">ORCID</a>
         <a href="https://github.com/dvitel">GitHub</a>
@@ -157,19 +157,19 @@
         <span class="title">First is Not Really Better Than Last: Evaluating Layer Choice and Aggregation Strategies in Language Model Data Influence Estimation</span>
         <span class="authors"><span class="me">Dmytro Vitel</span>, Anshuman Chhabra</span>
         <span class="venue">International Conference on Learning Representations (ICLR), 2026</span>
-        <span class="tags"><a href="https://github.com/dvitel/nn-infl">code</a><a href="https://github.com/dvitel/nn-infl-data">data</a></span>
+        <span class="tags"><a href="https://openreview.net/forum?id=Dkgw08Z4sj">paper</a><a href="https://arxiv.org/abs/2511.04715">arXiv</a><a href="https://github.com/dvitel/nn-infl">code</a><a href="https://github.com/dvitel/nn-infl-data">data</a></span>
       </li>
       <li>
         <span class="title">Coordinate System Extraction as the Search Driver in Test-Based Genetic Programming</span>
         <span class="authors"><span class="me">Dmytro Vitel</span>, Kok Cheng Tan, Alessio Gaspar, Paul Wiegand</span>
         <span class="venue">Genetic and Evolutionary Computation Conference (GECCO), ACM, 2025</span>
-        <span class="tags"><a href="https://github.com/cereal-lab/cde-search">code</a></span>
+        <span class="tags"><a href="https://doi.org/10.1145/3712256.3726464">paper</a><a href="https://github.com/cereal-lab/cde-search">code</a></span>
       </li>
       <li>
         <span class="title">Robust Search for the Underlying Objectives in Black-Box Games with Binary Outcomes</span>
         <span class="authors"><span class="me">Dmytro Vitel</span>, Alessio Gaspar, Paul Wiegand</span>
-        <span class="venue">Applications of Evolutionary Computation (EvoApplications, EvoStar), 2025</span>
-        <span class="tags"><a href="https://github.com/cereal-lab/cde-search">code</a></span>
+        <span class="venue">Applications of Evolutionary Computation (EvoApplications, EvoStar), LNCS, 2025</span>
+        <span class="tags"><a href="https://doi.org/10.1007/978-3-031-90065-5_33">paper</a><a href="https://github.com/cereal-lab/cde-search">code</a></span>
       </li>
     </ol>
     <p class="more">Full list on <a href="https://scholar.google.com/citations?user=RME1wRwAAAAJ">Google Scholar</a> and in the <a href="assets/Dmytro_Vitel_CV.pdf">CV</a>.</p>
@@ -190,7 +190,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>
-      <a href="mailto:viteldmitry@gmail.com">viteldmitry@gmail.com</a> · Tampa, FL, USA
+      <a class="email email-text" data-u="dvitel" data-d="usf.edu" href="#contact">dvitel [at] usf [dot] edu</a> · Tampa, FL, USA
     </p>
   </section>
 
@@ -198,5 +198,13 @@
     Last updated September 2026.
   </footer>
 </main>
+<script>
+  // The address is assembled here so it never appears as a mailto: in the HTML source.
+  document.querySelectorAll('a.email').forEach(function (a) {
+    var addr = a.dataset.u + '@' + a.dataset.d;
+    a.href = 'mailto:' + addr;
+    if (a.classList.contains('email-text')) a.textContent = addr;
+  });
+</script>
 </body>
 </html>

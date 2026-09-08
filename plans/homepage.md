@@ -1,6 +1,6 @@
 # Research homepage on GitHub Pages
 
-Status: page built locally 2026-09-07, not yet pushed. Owner creates the `dvitel.github.io` repo and pushes.
+Status: live at https://dvitel.github.io since 2026-09-07 (repo dvitel/dvitel.github.io, commit 6b22598, Pages build_type=legacy from main root).
 
 ## Goal
 
@@ -19,6 +19,12 @@ three most recent publications, education, links (Scholar, ORCID, GitHub, Linked
   Replace the copy whenever the CV changes.
 - Selected publications = three most recent from the CV (ICLR 2026, GECCO 2025, EvoStar 2025). Code links
   taken from the CV's own hyperlinks: `nn-infl` + `nn-infl-data` (ICLR), `cde-search` (GECCO and EvoStar).
+  Article links (added 2026-09-07, resolved via Crossref / OpenReview API): ICLR → OpenReview `Dkgw08Z4sj`
+  (ICLR 2026 poster) + arXiv 2511.04715; GECCO → doi:10.1145/3712256.3726464; EvoStar →
+  doi:10.1007/978-3-031-90065-5_33 (LNCS, EvoApplications 2025 Part II, pp. 541-556).
+- Contact email is `dvitel@usf.edu` (replaced Gmail 2026-09-07). It is stored as `data-u`/`data-d` attributes
+  and assembled into the `mailto:` by a few lines of JS, with `dvitel [at] usf [dot] edu` as the no-JS text,
+  so the address never appears as a plain `mailto:` in the HTML source. Gmail remains only inside the CV PDF.
 
 ## To update
 
